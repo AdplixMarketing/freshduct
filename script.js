@@ -83,17 +83,17 @@ document.querySelectorAll('.faq-question').forEach(question => {
   question.addEventListener('click', () => {
     const item = question.parentElement;
     const answer = item.querySelector('.faq-answer');
-    const isActive = item.classList.contains('active');
+    const isOpen = item.classList.contains('open');
 
     // Close all
     document.querySelectorAll('.faq-item').forEach(i => {
-      i.classList.remove('active');
+      i.classList.remove('open');
       i.querySelector('.faq-answer').style.maxHeight = null;
     });
 
-    // Open clicked if wasn't active
-    if (!isActive) {
-      item.classList.add('active');
+    // Open clicked if wasn't open
+    if (!isOpen) {
+      item.classList.add('open');
       answer.style.maxHeight = answer.scrollHeight + 'px';
     }
   });

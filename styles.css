@@ -204,11 +204,11 @@ section{padding:100px 0}
 /* ===== FAQ ===== */
 .faq-grid{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
 .faq-item{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius);overflow:hidden;transition:var(--transition)}
-.faq-item.active{border-color:var(--primary);box-shadow:0 4px 16px rgba(79,195,247,.15)}
+.faq-item.open{border-color:var(--primary);box-shadow:0 4px 16px rgba(79,195,247,.15)}
 .faq-question{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;cursor:pointer;font-weight:600;color:var(--black);transition:var(--transition)}
 .faq-question:hover{color:var(--primary-dark)}
 .faq-question .icon{width:32px;height:32px;border-radius:50%;background:var(--primary-light);display:flex;align-items:center;justify-content:center;transition:var(--transition);min-width:32px;font-size:.9rem;color:var(--primary-dark)}
-.faq-item.active .faq-question .icon{background:var(--primary-dark);color:var(--white);transform:rotate(45deg)}
+.faq-item.open .faq-question .icon{background:var(--primary-dark);color:var(--white);transform:rotate(45deg)}
 .faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease}
 .faq-answer .inner{padding:0 24px 20px;color:var(--gray-600);line-height:1.8}
 
